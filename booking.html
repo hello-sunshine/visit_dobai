@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Visit Dubai</title>
+    	<link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet" type="text/css">
+		<link href="globalStyle.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+	<div class="wrapper">
+    	<header>
+			<h1>Visit Dubai</h1>
+        	<nav>
+				<ul>
+                    <li><a href="homepage.html">Home</a></li>
+                    <li><a href="visit_guide.html">Visit guide</a></li>
+                    <li><a href="booking.html">Book a tour</a></li>
+				</ul>
+			</nav>
+    	</header>
+    	<article class="floatleft">
+   			<h2>Dubai tours</h2>
+        	<h3>fun-filled week</h3>
+        	<ol>
+        		<li>Day 1- See the sights: Dubai Fountains, Burj Khalifa, Burj Al Arab.</li>
+                <li>Day 2 - Shopping spree in Dubai Mall. We'll take you for a personalised tour around the shops you fancy.</li>
+                <li>Day 3 - Beach day - we'll show you the most beautiful beaches Dubai has to offer. Sunny weather included!</li>
+                <li>Day 4 - Desert adventure - if you think riding camels is the only fun thing you can do in a desert, think again!</li>
+                <li>Day 5 - Ahoy, captain! We'll take you to the yacht club in breath-taking Dubai Marina for a boat trip. See the amazing city from a different perspective.</li>
+                <li>Day 6 - Unknown Dubai - this is a great time to check out little secrets Dubai has to offer, such as Miracle Garden.</li>
+                <li>Day 7 - Foodie heaven. How many eat as much as you like local cuisine buffets can you have in a day?</li>
+            </ol>
+         	<h3>3 days in heaven</h3>
+        	<ol>
+        		<li>Day 1 - See the sights: Dubai Fountains, Burj Khalifa, Burj Al Arab.</li>
+                <li>Day 2 - We'll take you to the yacht club in breath-taking Dubai Marina for a boat trip. See the amazing city from a different perspective.</li>
+                <li>Day 3 - Foodie heaven. How many eat as much as you like local cuisine buffets can you have in a day?</li>
+        	</ol>
+        <h3>weekend for now</h3>
+        	<ol>
+                <li>Day 1 - See the sights: Dubai Fountains, Burj Khalifa, Burj Al Arab.</li>
+                <li>Day 2 - Beach day - we'll show you the most beautiful beaches Dubai has to offer. Sunny weather included!</li>
+            </ol>
+        <section>
+			<h2>Let's book this awesome tour!</h2>
+            <p>* required fields</p>
+        	<form action="http://formtoemail.com/user_forms.php" method="post">
+        	<input type="hidden" name="user_id" value="F4X3ZSJJ2QWQR0OXUQ9I">
+			<input type="hidden" name="form_id" value="1">
+        	<fieldset>
+            <legend>Your details</legend>
+                <label for="name">Your name*</label> 
+                    <input type="text" id="name" name="name" autofocus>
+                    <p class="error"></p>
+                <label for="phone">Phone number*</label>
+                    <input type="tel" id="phone" name="phone" placeholder="country code">
+                    <p class="error"></p>
+                <label for="email">E-mail*</label>
+                    <input type="email" id="email" name="email">
+                    <p class="error"></p>
+            </fieldset>
+            <fieldset>
+            	<legend>Your tour</legend>
+                <label for="date">Pick a date</label>
+                    <input type="date" id="date" name="date">
+                <label for="qty">How many people?</label>
+                    <input type="number" id="qty" min="2" max="10" name="qty">
+                <label>    
+                    <input type="checkbox" id="individual" name="qty">Individual tour
+                </label>
+            <div id="tour">
+            <p>Pick your tour</p>
+                 <label>
+                    <input type="radio" name="tour" value="threedays">3 days in heaven
+               	 </label>
+                 <label>
+                    <input type="radio" name="tour" value="week"> fun-filled week
+                 </label>
+                 <label>
+                    <input type="radio" name="tour" value="weekend">weekend for now
+                 </label>   
+            </div>
+            <p class="comment"></p>
+                <p><label>Comments
+                    <textarea id="comments" name="comments" placeholder="Type your question"></textarea>
+                </label></p>
+            </fieldset>
+            <fieldset id="vote">
+            	<legend>Competition time</legend>
+                Take part in our competition for best greetings from Dubai. Pick your image and greetings!
+                
+            	<p label for="image">Select your image</p>
+        		<select id="image">
+                    <option>Please select one</option>
+                    <option value="beach">Dubai beach</option>
+                    <option value="fountain">Dubai Fountain</option>
+                    <option value="marina">Dubai Marina</option>
+                    <option value="desert">Dubai desert</option>
+        		</select>
+        		<p label for="greeting">Greeting text</p>
+        		<input type="text" id="greeting">
+            <button id="preview">Preview</button> 
+            <button id="clear">Start again</button>
+        	<canvas id="postcard_canvas" width="300" height="210"></canvas>
+            <button id="submit">Submit</button>
+            </fieldset>
+            </form>
+		</section>
+        </article>
+		<aside class="floatright">
+        	<p style="height: 5em"></p>
+    		<h2>Contact us</h2>
+        	<p>Telephone: +44123456789</p>
+        	<p>E-mail:<a href="mailto:dubaitours@gmail.co.uk"> dubaitours@gmail.co.uk</a></p>
+        	<p>Office: 33 Regent Street London W1C PU UK</p>
+        	<p>We're open: 9am-5pm GMT Mon-Fri</p>
+        </aside>
+	</div>
+    <footer>
+        <p>All rights reserved &copy;</p>
+        <p>Read our<a href="#"> terms and conditions</a></p>
+        <p>All images courtesy of<a href="http://all-free-download.com/free-photos/dubai-images.html"> Free Photos</a> under Creative Commons attribution and Public domain license</p>
+    </footer>
+    <!-- javascript -->
+	<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="js/jcanvas.min.js"></script>
+    <script src="js/assignment3.js"></script>
+</body>
+</html>
